@@ -40,4 +40,20 @@
     .button-settings {
         display: block;
     }
+
+    /* app-nav section */
+    /* main menu section */
+    .nav__button .button__text {
+        display: none;
+    }
+
+    .nav__button .button--big {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .app-nav .container > .row {
+        justify-content: center;
+        align-items: center;
+    }
 }
