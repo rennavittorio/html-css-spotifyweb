@@ -178,3 +178,33 @@ app-player rules
     font-size: 0.75rem;
 }
 
+/* other option section */
+.other-option > .row {
+    gap: 0 10px;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.progress__volume {
+    position: relative;
+    width: 100px;
+}
+
+.volume-progress,
+.volume-total {
+    padding: 4px;
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(0, -50%)
+}
+
+.volume-progress {
+    background-color: var(--font-lightgrey);
+    width: 35px;
+    z-index: 1;
+}
+
+.volume-total {
+    background-color: var(--font-grey);
+    width: 100px;
+}
