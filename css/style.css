@@ -7,6 +7,7 @@
     --lemon: #ADFF2F;
 
     --font-grey: #828282;
+    --font-lightgrey: #c1c1c1;
 
 }
 
@@ -17,7 +18,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    color: white;
+    color: var(--font-lightgrey);
 }
 
 a {
@@ -89,7 +90,7 @@ body {
 }
 
 .button--big {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 
@@ -129,22 +130,51 @@ app-player rules
 }
 
 /* music player section */
-.music-player {
-    padding: 0 20px;
-}
-
 .music-player > .row {
     flex-direction: column;
     align-items: center;
     gap: 10px 0;
+    width: 100%;
 }
 
 .music-player.col {
     flex-grow: 1;
 }
 
-.music-player__buttons {
+.music-player__buttons,
+.music-player__time {
     gap: 0 20px;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.progress__timeline {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.progress__timeline .timeline-progress,
+.progress__timeline .timeline-total {
+    padding: 4px;
+    position: absolute;
+    transform: translate(0, -50%);
+    border-radius: 50px;
+}
+
+.progress__timeline .timeline-progress {
+    background-color: var(--font-lightgrey);
+    width: 35%;
+    z-index: 1;
+}
+
+.progress__timeline .timeline-total {
+    background-color: var(--font-grey);
+    width: 100%;
+}
+
+.progress__time,
+.total__time {
+    font-size: 0.75rem;
 }
 
