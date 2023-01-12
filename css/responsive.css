@@ -1,20 +1,43 @@
 /* desktop-first approach */
-/* mid screen */
+/********************
+**** mid screen *****
+*********************/
 @media screen and (max-width: 877px) {
 
 }
 
-/* small screen */
+/********************
+**** small screen *****
+*********************/
 @media screen and (max-width: 638px) {
+    /* app music player */
+    /* current track section */
     .current-track__icons .row {
         gap: 0;
         flex-direction: column;
     } 
 }
 
-/* x-small screen */
+/********************
+**** x-small screen *****
+*********************/
 @media screen and (max-width: 551px) {
+    /* layout */
     .app-nav {
         width: 50px;
+    }
+
+    /* app music player */
+    /* other options */
+    .progress__volume {
+        width: 0;
+    }
+
+    .other-option [class^="button"]:not(.button-settings) {
+        display: none;
+    }
+
+    .button-settings {
+        display: block;
     }
 }
