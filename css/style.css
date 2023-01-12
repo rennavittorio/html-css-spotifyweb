@@ -1,11 +1,18 @@
 /* general rules */
 :root {
+    --dark: #1E1E1E;
+    --darkblue: #080B12;
+    --navy: #141922;
+    --darkgrey: #282828;
+    --lemon: #ADFF2F;
+
+    --font-grey: #828282;
 
 }
 
 
 /* reset rules */
-body {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -26,3 +33,88 @@ img {
     max-width: 100%;
     display: block;
 }
+
+
+/* layout rules */
+body {
+    height: 100vh;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+}
+
+.debug .container,
+.debug .row,
+.debug .col {
+    border: 2px dashed black;
+    /* padding: 5px; */
+    color: white;
+}
+
+.container {
+    padding: 0 10px;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.app-window {
+    background-color: var(--lemon);
+    flex-grow: 1;
+
+    display: flex;
+}
+
+.app-player {
+    background-color: var(--darkgrey);
+    height: 90px;
+}
+
+.app-nav {
+    background-color: var(--dark);
+    width: 220px;
+}
+
+.app-content {
+    background-color: var(--navy);
+    flex-grow: 1;
+}
+
+
+/*****************
+app-player rules 
+******************/
+.app-player .container > .row {
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.current-track__section,
+.current-track__section .row {
+    gap: 0 10px;
+    align-items: center;
+}
+
+.current-track__img {
+    width: 40px;
+    aspect-ratio: 1;
+}
+
+.current-track__artist, 
+.current-track__name {
+    font-size: 0.75rem;
+}
+
+.current-track__name,
+.current-track__icon {
+    color: var(--font-grey);
+}
+
+.current-track__icon {
+    font-size: 1rem;
+}
+

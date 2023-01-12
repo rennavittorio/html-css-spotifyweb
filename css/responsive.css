@@ -1,0 +1,20 @@
+/* desktop-first approach */
+/* mid screen */
+@media screen and (max-width: 877px) {
+
+}
+
+/* small screen */
+@media screen and (max-width: 638px) {
+    .current-track__section .row {
+        gap: 0;
+        flex-direction: column;
+    } 
+}
+
+/* x-small screen */
+@media screen and (max-width: 551px) {
+    .app-nav {
+        width: 50px;
+    }
+}
