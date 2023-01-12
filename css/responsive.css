@@ -6,7 +6,7 @@
 
 /* small screen */
 @media screen and (max-width: 638px) {
-    .current-track__section .row {
+    .current-track__icons .row {
         gap: 0;
         flex-direction: column;
     } 

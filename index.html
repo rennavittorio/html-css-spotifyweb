@@ -27,9 +27,9 @@
     <aside class="app-player">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col current-track__section">
                     <!-- track info -->
-                    <div class="current-track__section row">
+                    <div class="row">
                         <div class="col">
                             <div class="current-track__img">
                                 <img src="./img/assets/aquietplace.jpeg" alt="current-track">
@@ -43,7 +43,7 @@
                                 Current Track
                             </h3>
                         </div>
-                        <div class="col">
+                        <div class="col current-track__icons">
                             <div class="row">
                                 <div class="col">
                                     <i class="fa-regular fa-heart current-track__icon"></i>
@@ -56,8 +56,29 @@
                     </div>
                     
                 </div>
-                <div class="col">
-                    music player
+                <div class="col music-player">
+                    <div class="row">
+                        <div class="col music-player__buttons row">
+                            <div class="button button-shuffle">
+                                <i class="fa-solid fa-shuffle"></i>
+                            </div>
+                            <div class="button button-backward">
+                                <i class="fa-solid fa-backward-step"></i>
+                            </div>
+                            <div class="button button-play button--big">
+                                <i class="fa-regular fa-circle-play"></i>
+                            </div>
+                            <div class="button button-forward">
+                                <i class="fa-solid fa-forward-step"></i>
+                            </div>
+                            <div class="button button-repeat">
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </div>
+                        </div>
+                        <div class="col music-player__time">
+                            line
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
                     volume
