@@ -400,3 +400,34 @@ navbar rules
     flex-basis: 100%;
     padding: 0 10px;
 }
+
+.section__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    padding: 30px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card > * {
+    margin-bottom: 15px;
+}
+
+/* .card img {
+    min-width: 200px;
+} */
+
+.card .track__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.card .track__subtitle {
+    font-size: 0.5rem;
+}
