@@ -54,11 +54,16 @@ body {
 
 .container {
     padding: 0 10px;
-    height: 100%;
 }
 
 .row {
     display: flex;
+}
+
+.app-nav .container, 
+.app-nav .row,
+.app-player .container,
+.app-player .row {
     height: 100%;
 }
 
@@ -67,6 +72,8 @@ body {
     flex-grow: 1;
 
     display: flex;
+
+    overflow: hidden;
 }
 
 .app-player {
@@ -82,6 +89,7 @@ body {
 .main-content {
     background-color: var(--navy);
     flex-grow: 1;
+    overflow-y: auto;
 }
 
 /* buttons rules */
@@ -330,4 +338,55 @@ navbar rules
 /**********************
  main-content section
 ***********************/
+.main-content .container, 
+.main-content .row,
+.main-content .col {
+    border: 2px dashed coral;
+    padding: 20px;
+}
 
+/* upgrade section */
+.upgrade-banner {
+    background-color: var(--darkblue);
+}
+
+.upgrade-banner .row {
+    justify-content: flex-end;
+}
+
+.link {
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: 25px 0;
+}
+
+.link a {
+    padding: 0 40px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+/* music-content section */
+/* filter-menu section */
+.filter__menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.filter__option a {
+    padding: 10px 20px;
+}
+
+.filter__option::after {
+    content: '';
+    display: block;
+    width: 35px;
+    padding: 2px;
+    background-color: var(--font-grey);
+    margin: 5px auto;
+}
