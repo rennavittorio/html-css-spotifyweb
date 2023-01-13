@@ -56,4 +56,18 @@
         justify-content: center;
         align-items: center;
     }
+
+    /* playlist menu section */
+    .playlist-menu {
+        display: none;
+    }
+
+    .main-menu {
+        flex-grow: 1;
+    }
+
+    /* user-menu section */
+    .user-menu .nav__button:first-child:after {
+        display: none;
+    }
 }
