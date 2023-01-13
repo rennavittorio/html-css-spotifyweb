@@ -386,7 +386,7 @@ navbar rules
     display: block;
     width: 35px;
     padding: 2px;
-    background-color: var(--font-grey);
+    background-color: transparent;
     margin: 5px auto;
 }
 
@@ -452,3 +452,23 @@ navbar rules
 /*******************
 hover effects
 ********************/
+.button--hover:hover * {
+    color: white;
+    font-weight: 700;
+}
+
+.filter__option:hover:after {
+    background-color: var(--lemon);
+}
+
+
+/* 
+da capire
+*/
+li.nav__button:not(.no-bar):hover::before {
+    content: '';
+    display: block;
+    padding: 10px 3px;
+    background-color: var(--lemon);
+    /* margin-left: -12px; */
+}
