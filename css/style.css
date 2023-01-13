@@ -141,7 +141,6 @@ app-player rules
 .music-player > .row {
     flex-direction: column;
     align-items: center;
-    gap: 10px 0;
     width: 100%;
 }
 
@@ -338,12 +337,12 @@ navbar rules
 /**********************
  main-content section
 ***********************/
-.main-content .container, 
+/* .main-content .container, 
 .main-content .row,
 .main-content .col {
     border: 2px dashed coral;
     padding: 20px;
-}
+} */
 
 /* upgrade section */
 .upgrade-banner {
@@ -394,10 +393,12 @@ navbar rules
 /* recently played section */
 .section__content .row {
     margin: 0 -10px;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 
 .section__content .col {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     padding: 0 10px;
 }
 
@@ -405,7 +406,13 @@ navbar rules
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
-    padding: 30px 0;
+    padding: 30px 0 10px;
+}
+
+.section__subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 10px;
 }
 
 .card {
@@ -418,16 +425,30 @@ navbar rules
     margin-bottom: 15px;
 }
 
-/* .card img {
-    min-width: 200px;
-} */
+.card img {
+    max-width: 100%;
+}
 
 .card .track__title {
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: white;
 }
 
 .card .track__subtitle {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
+
+/* popular-artists-section */
+.popular-artists-section .card img {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/*******************
+hover effects
+********************/
