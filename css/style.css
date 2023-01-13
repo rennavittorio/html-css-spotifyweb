@@ -79,7 +79,7 @@ body {
     width: 220px;
 }
 
-.app-content {
+.main-content {
     background-color: var(--navy);
     flex-grow: 1;
 }
@@ -326,4 +326,8 @@ navbar rules
     flex-grow: 0;
     margin-top: 20px;
 }
+
+/**********************
+ main-content section
+***********************/
 

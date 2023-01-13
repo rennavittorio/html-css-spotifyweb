@@ -21,6 +21,11 @@
                 <div class="row">
 
                     <!-- main menu -->
+
+                    <!-- COREX
+                    1. dividere in 5 parti (separare install-app da user)
+                    2. usare il flex
+                    3. dare flex-growth o margin auto a playlist -->
                     <div class="col main-menu">
                         <ul class="nav__menu">
                             <li class="nav__button">
@@ -107,6 +112,8 @@
                     </div>
 
 
+                    <!-- COREX
+                    provare a gestire con due elementi -->
                     <div class="col user-menu">
                         <ul class="nav__menu">
                             <li class="nav__button">
@@ -132,8 +139,10 @@
         </header>
 
         <!-- page content -->
-        <section class="app-content container">
-            
+        <section class="main-content container">
+            <div class="test">
+
+            </div>
         </section>
 
     </main>
@@ -145,6 +154,9 @@
                 <div class="col current-track__section">
                     <!-- track info -->
                     <div class="row">
+
+                        <!-- COREX
+                        ridurre a due elementi e accorpare track-img e artist -->
                         <div class="col">
                             <div class="current-track__img">
                                 <img src="./img/assets/aquietplace.jpeg" alt="current-track">
@@ -224,6 +236,10 @@
                                 <i class="fa-solid fa-desktop"></i>
                             </div>
                         </div>
+
+                        <!-- COREX
+                        da correggere, il button volume deve essere un unico element
+                        provare ad usare display:content; per la volume-bar -->
                         <div class="col">
                             <div class="button button-volume">
                                 <i class="fa-solid fa-volume-high"></i>
