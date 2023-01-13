@@ -3,7 +3,14 @@
 **** mid screen *****
 *********************/
 @media screen and (max-width: 877px) {
+    /* recently played section */
+    .section__content .row {
+        flex-wrap: wrap;
+    }
 
+    .section__content .col {
+        flex-basis: 25%;
+    }
 }
 
 /********************
@@ -16,6 +23,11 @@
         gap: 0;
         flex-direction: column;
     } 
+
+    /* recently played section */
+    .section__content .col {
+        flex-basis: 50%;
+    }
 }
 
 /********************

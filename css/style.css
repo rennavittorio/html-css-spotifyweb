@@ -390,3 +390,13 @@ navbar rules
     background-color: var(--font-grey);
     margin: 5px auto;
 }
+
+/* recently played section */
+.section__content .row {
+    margin: 0 -10px;
+}
+
+.section__content .col {
+    flex-basis: 100%;
+    padding: 0 10px;
+}
