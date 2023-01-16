@@ -230,11 +230,11 @@ app-player rules
 navbar rules 
 ******************/
 /* version 1.0 */
-.app-nav .container,
+/* .app-nav .container,
 .app-nav .row,
 .app-nav .col {
     border: 2px solid red;
-}
+} */
 
 
 .app-nav .container > .row {
@@ -247,6 +247,10 @@ navbar rules
 }
 
 /* main-menu section */
+.logo {
+    padding: 10px 0;
+}
+
 .logo--small {
     display: none;
 }
