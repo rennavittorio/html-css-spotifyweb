@@ -236,6 +236,11 @@ navbar rules
     border: 2px solid red;
 } */
 
+.app-nav {
+    position: relative;
+    z-index: 2;
+}
+
 
 .app-nav .container > .row {
     flex-direction: column;
@@ -268,7 +273,10 @@ navbar rules
 .nav__button .button__icon {
     flex-basis: 2rem;
     font-size: 1.5rem;
-    margin-right: 10px;
+}
+
+.button__text {
+    margin-left: 10px
 }
 
 .button__icon.button--big i,
@@ -365,16 +373,24 @@ navbar rules
 /* upgrade section */
 .upgrade-banner {
     background-color: var(--darkblue);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 .upgrade-banner .row {
     justify-content: flex-end;
 }
 
+
+
 .link {
     border: 1px solid white;
     border-radius: 50px;
     margin: 25px 0;
+    width: 100%;
 }
 
 .link a {
@@ -387,6 +403,10 @@ navbar rules
 
 
 /* music-content section */
+.main-content {
+    padding-top: 100px;
+}
+
 /* filter-menu section */
 .filter__menu {
     justify-content: center;
