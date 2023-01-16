@@ -78,7 +78,8 @@ body {
 
 .app-player {
     background-color: var(--darkgrey);
-    height: 120px;
+    height: 90px;
+    padding: 10px 0;
 }
 
 .app-nav {
