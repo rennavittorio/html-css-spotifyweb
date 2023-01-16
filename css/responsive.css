@@ -59,6 +59,15 @@
 
 
     /* version 1.0 */
+    .logo--big {
+        display: none;
+    }
+
+    .logo--small {
+        display: block;
+    }
+
+
     .nav__button .button__text {
         display: none;
     }

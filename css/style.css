@@ -247,6 +247,11 @@ navbar rules
 }
 
 /* main-menu section */
+.logo--small {
+    display: none;
+}
+
+
 .nav__button {
     display: flex;
     align-items: center;
