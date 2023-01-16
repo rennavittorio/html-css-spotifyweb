@@ -95,4 +95,11 @@
     .user-menu .nav__button:first-child:after {
         display: none;
     }
+
+
+    /* hover effect */
+    li.nav__button:not(.no-bar):hover:before {
+        left: -5px;
+        /* margin-left: -12px; */
+    }
 }
