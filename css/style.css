@@ -90,6 +90,7 @@ body {
 .main-content {
     background-color: var(--navy);
     flex-grow: 1;
+    flex-shrink: 1;
     overflow-y: auto;
 }
 
@@ -227,9 +228,13 @@ app-player rules
 /*****************
 navbar rules 
 ******************/
-/* .app-nav .container {
-    padding-top: 20px; // obsoleto
-} */
+/* version 1.0 */
+.app-nav .container,
+.app-nav .row,
+.app-nav .col {
+    border: 2px solid red;
+}
+
 
 .app-nav .container > .row {
     flex-direction: column;
