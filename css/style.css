@@ -260,14 +260,15 @@ navbar rules
     display: flex;
     align-items: center;
     align-content: center;
-    gap: 0 10px;
     text-align: center;
     padding: 10px 0;
+    position: relative;
 }
 
 .nav__button .button__icon {
     flex-basis: 2rem;
     font-size: 1.5rem;
+    margin-right: 10px;
 }
 
 .button__icon.button--big i,
@@ -493,11 +494,13 @@ hover effects
 /* 
 da capire
 */
-li.nav__button:not(.no-bar):hover::before {
+li.nav__button:not(.no-bar):hover:before {
     content: '';
     display: block;
-    padding: 10px 3px;
+    padding: 10px 2px;
     background-color: var(--lemon);
+    position: absolute;
+    left: -10px;
     /* margin-left: -12px; */
 }
 
