@@ -59,12 +59,20 @@
 
 
     /* version 1.0 */
+    .logo {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .logo--big {
         display: none;
     }
 
     .logo--small {
         display: block;
+        width: 30px;
     }
 
 

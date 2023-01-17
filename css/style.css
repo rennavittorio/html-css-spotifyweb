@@ -52,7 +52,8 @@ body {
     color: white;
 }
 
-.container {
+.main-content .container,
+.app-player .container {
     padding: 0 10px;
 }
 
@@ -115,7 +116,6 @@ app-player rules
 }
 
 /* current-track section */
-.current-track__section,
 .current-track__section .row {
     gap: 0 10px;
     align-items: center;
@@ -252,21 +252,21 @@ navbar rules
 }
 
 /* main-menu section */
-.logo {
-    padding: 10px 0;
+.logo--big {
+    width: 133px;
+    padding: 25px 10px;
 }
 
 .logo--small {
     display: none;
 }
 
-
 .nav__button {
     display: flex;
     align-items: center;
     align-content: center;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 10px;
     position: relative;
 }
 
@@ -289,6 +289,7 @@ navbar rules
 /* playlist menu section */
 .playlist-menu .row {
     flex-direction: column;
+    padding: 0 10px;
 }
 
 .playlist-menu .row .col {
@@ -509,17 +510,13 @@ hover effects
     background-color: var(--lemon);
 }
 
-/* 
-da capire
-*/
-li.nav__button:not(.no-bar):hover:before {
+li:hover .nav__button:not(.no-bar)::before {
     content: '';
     display: block;
     padding: 10px 2px;
     background-color: var(--lemon);
     position: absolute;
-    left: -10px;
-    /* margin-left: -12px; */
+    left: 0;
 }
 
 
