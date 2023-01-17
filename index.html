@@ -515,8 +515,8 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
+
                 <div class="col music-player">
                     <div class="row">
                         <div class="col music-player__buttons row">
@@ -540,57 +540,76 @@
                                 <i class="fa-solid fa-rotate-right"></i>
                             </div>
                         </div>
-                        <div class="col music-player__time row">
-                                <div class="col">
-                                    <div class="progress__time">
-                                        0:25
-                                    </div>
-                                </div>
-                                <div class="col progress__timeline">
-                                    <div class="timeline-progress progress-bar">
 
-                                    </div>
-                                    <div class="timeline-total">
-                                
-                                    </div>
+                        <div class="col music-player__time row">
+                            <div class="col">
+                                <div class="progress__time">
+                                    0:25
                                 </div>
-                                <div class="col">
-                                    <div class="total__time">
-                                        4:35
-                                    </div>
+                            </div>
+
+                            <!-- new version -->
+                            <div class="col progress__time">
+                                <div class="progress__total">
+                                    <div class="progress__actual"></div>
                                 </div>
+                            </div>
+
+                            <!-- old version -->
+                            <!-- <div class="col progress__timeline">
+                                <div class="timeline-progress progress-bar">
+
+                                </div>
+                                <div class="timeline-total">
+                            
+                                </div>
+                            </div> -->
+                            <div class="col">
+                                <div class="total__time">
+                                    4:35
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="col other-option">
                     <div class="row">
+
                         <div class="col">
                             <div class="button button-list button--hover">
                                 <i class="fa-solid fa-list-ul"></i>
                             </div>
                         </div>
+
                         <div class="col">
                             <div class="button button-monitor button--hover">
                                 <i class="fa-solid fa-desktop"></i>
                             </div>
                         </div>
 
-                        <!-- COREX
-                        da correggere, il button volume deve essere un unico element
-                        provare ad usare display:content; per la volume-bar -->
-                        <div class="col">
+                        <!-- new version button volume -->
+                        <div class="col volume-setting">
                             <div class="button button-volume button--hover">
                                 <i class="fa-solid fa-volume-high"></i>
                             </div>
+
+                            <div class="col button progress__time">
+                                <div class="progress__total">
+                                    <div class="progress__actual"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col button progress__volume">
+
+                        <!-- old version -->
+                        <!-- <div class="col button progress__volume">
                             <div class="button volume-progress progress-bar">
 
                             </div>
                             <div class="button volume-total">
                         
                             </div>
-                        </div>
+                        </div> -->
                         <!-- bonus -->
                         <div class="col">
                             <div class="button button-settings button--hover">

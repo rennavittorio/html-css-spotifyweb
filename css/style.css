@@ -110,10 +110,15 @@ body {
 app-player rules 
 ******************/
 .app-player .container > .row {
-    justify-content: space-between;
     align-items: center;
     align-content: center;
 }
+
+.current-track__section,
+.other-option {
+    flex-basis: 220px;
+}
+
 
 /* current-track section */
 .current-track__section .row {
@@ -160,7 +165,51 @@ app-player rules
     width: 100%;
 }
 
-.progress__timeline {
+.music-player__time {
+    flex-grow: 1;
+}
+
+
+/* new version */
+.progress__time {
+    flex-basis: 70%;    
+}
+
+.progress__total {
+    width: 100%;
+    height: 4px;
+    background-color: var(--font-grey);
+    border-radius: 50px;
+    position: relative;
+}
+
+.progress__actual {
+    width: 35%;
+    padding: 2px ;
+    background-color: var(--font-lightgrey);
+    border-radius: 50px;
+}
+
+.music-player:hover .progress__actual::after,
+.volume-setting:hover .progress__actual::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.music-player:hover .progress__actual,
+.volume-setting:hover .progress__actual {
+    background-color: var(--lemon);
+}
+
+/* old version */
+/* .progress__timeline {
     flex-basis: 50%;
     position: relative;
 }
@@ -182,7 +231,7 @@ app-player rules
 .progress__timeline .timeline-total {
     background-color: var(--font-grey);
     width: 100%;
-}
+} */
 
 .progress__time,
 .total__time {
@@ -196,7 +245,23 @@ app-player rules
     align-items: center;
 }
 
-.progress__volume {
+.volume-setting {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+.volume-setting {
+    flex-basis: 100%;
+}
+
+.volume-setting .progress__time {
+    flex-grow: 1;
+}
+
+
+/* old version */
+/* .progress__volume {
     position: relative;
     width: 100px;
 }
@@ -218,7 +283,7 @@ app-player rules
 .volume-total {
     background-color: var(--font-grey);
     width: 100%;
-}
+} */
 
 .button-settings {
     display: none;

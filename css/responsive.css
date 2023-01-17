@@ -45,7 +45,12 @@
         width: 0;
     }
 
-    .other-option [class^="button"]:not(.button-settings) {
+    .app-player .container > .row {
+        gap: 0 20px;
+    }
+
+    .other-option [class^="button"]:not(.button-settings),
+    .other-option .progress__time {
         display: none;
     }
 
