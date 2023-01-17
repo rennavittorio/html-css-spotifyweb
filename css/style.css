@@ -344,6 +344,20 @@ navbar rules
     margin-left: 10px
 }
 
+.nav__button-home * {
+    color: white;
+    font-weight: 700;
+}
+
+.nav__button-home::before {
+    content: '';
+    display: block;
+    padding: 10px 2px;
+    background-color: var(--lemon);
+    position: absolute;
+    left: 0;
+}
+
 .button__icon.button--big i,
 .button__text.button--big {
     font-size: 2.5rem;
@@ -496,7 +510,6 @@ navbar rules
 .section__content .row {
     margin: 0 -10px;
     justify-content: flex-start;
-    flex-wrap: wrap;
 }
 
 .section__content .col {
@@ -521,14 +534,11 @@ navbar rules
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .card > * {
     margin-bottom: 15px;
-}
-
-.card img {
-    max-width: 100%;
 }
 
 .card__img {
@@ -575,7 +585,7 @@ hover effects
     background-color: var(--lemon);
 }
 
-li:hover .nav__button:not(.no-bar)::before {
+li:hover .nav__button::before {
     content: '';
     display: block;
     padding: 10px 2px;
